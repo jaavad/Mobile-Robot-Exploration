@@ -9,9 +9,10 @@ This work introduces a novel approach that leverages available initial informati
 
 ### Integration of Global and Local Planning
 
-Following the acquisition of global planning, it is integrated with a local exploration algorithm, specifically the Histogram-based Frontier Exploration method. Additionally, a novel algorithm termed the "Transfer Algorithm" is introduced, leveraging FIRM graph features to safely navigate the robot from the current region to the next planned region when adhering to the global plan. Notably, the transfer algorithm ensures that the robot's uncertainty in each region remains independent of its uncertainty in other regions.
+Following the acquisition of global planning, it is integrated with a local exploration algorithm, specifically the Histogram-based Frontier Exploration method. Additionally, a novel algorithm termed the **"Transfer Algorithm"** is introduced, leveraging FIRM graph features to safely navigate the robot from the current region to the next planned region when adhering to the global plan. Notably, the transfer algorithm ensures that the robot's uncertainty in each region remains independent of its uncertainty in other regions.
 
 ### Experimental Evaluation
 
-The proposed approach and algorithms are evaluated through implementation on a nonholonomic mobile robot with unicycle dynamics, addressing various exploration problems in diverse environments. The experimental setup involves OpenCV, RGB camera, and Extended Kalman Filter (EKF) for perception and localization, along with LIDAR and a probabilistic Occupancy Grid Mapping algorithm for mapping.
+The proposed approach and algorithms are evaluated through implementation on a nonholonomic mobile robot with unicycle dynamics, addressing various exploration problems in diverse environments. The experimental setup involves **OpenCV**, **RGB camera**, and **Extended Kalman Filter (EKF)** for **Perception** and **Localization**, along with **LIDAR** and a probabilistic **Occupancy Grid Mapping algorithm** for **Mapping**.
+
 
