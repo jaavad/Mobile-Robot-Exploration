@@ -16,5 +16,5 @@ Following the acquisition of global planning, it is integrated with a local expl
 The proposed approach and algorithms are evaluated through implementation on a nonholonomic mobile robot with unicycle dynamics, addressing various exploration problems in diverse environments. The experimental setup involves **OpenCV**, **RGB camera**, and **Extended Kalman Filter (EKF)** for **Perception** and **Localization**, along with **LIDAR** and a probabilistic **Occupancy Grid Mapping algorithm** for **Mapping**.
 
 
- #### The code for this work will be shared soon, pending permission from the original author of a specific code segment used in the project
+ #### *The code for this work will be shared soon, pending permission from the original author of a specific code segment used in the project.*
 
