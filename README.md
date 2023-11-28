@@ -1,6 +1,5 @@
 # Autonomous Mobile Robot Exploration under Uncertainty Using Global and Local planning in Belief space
 
- ## Autonomous Mobile Robot Exploration with Initial Information and Uncertainty Consideration
 
 In the autonomous mobile robot exploration problem, the prevailing assumption often involves an entirely unknown environment. However, this assumption does not always hold true, as there are scenarios where initial information, such as rough 2D plans and satellite images, may be available for exploration. Despite recent efforts to incorporate this initial information into planning, these approaches have generally overlooked the existing uncertainties inherent in decision-making processes.
 
