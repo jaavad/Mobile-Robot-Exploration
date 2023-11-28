@@ -1,26 +1,18 @@
 # Autonomous Mobile Robot Exploration under Uncertainty Using Global and Local planning in Belief space
 
- In the autonomous mobile robot exploration problem, most of the time, it is assumed that the
-environment is completely unknown. However, this is not always a correct assumption because
-there are a lot of situation in which we could have some initial information such as rough 2D
-plans and satellite images for exploration. In addition, most exploration algorithms, such as
-frontier based exploration, are making decisions and planning locally. Although, recently, some
-works have tried to leverage the initial information in planning, they have not considered
-existing uncertainties in decision making. In this work, by leveraging existing initial information
-and considering observation and motion uncertainties, we have proposed a novel approach in
-which global plaining in belief space and local exploration planning have been combined to have
-more effective exploration in more realistic condition. In order to have a reliable global planning
-in continuous belief space, we need to have reliable initial information representing the
-observation and motion uncertainties of the robot. For this purpose, we used a graph-based FIRM
-(Feedback-based Information Road Map) approach in belief space. Indeed, FIRM is a new
-framework inspiring PRM approach for approximating the solution of the intractable POMDP
-problem in continuous belief space. After obtaining global planning, we combined it with a local
-exploration algorithm (Histogram-based frontier exploration) to have local planning also.
-Furthermore, leveraging FIRM graph features, we proposed another novel algorithm called
-“Transfer algorithm” for navigating robot safely from the current region to the next planned
-region, when robot needs to follow the global planning. More importantly, the transfer algorithm
-causes robot’s uncertainty in each region to be independent from its’ uncertainty in other regions.
-We have evaluated the novel approach algorithms by implementing it (them) in on a nonholonomic mobile robot with unicycle dynamic for several exploration problems in several
-different environments. For these initials tests, we used OpenCv, RGB Camera and EKF for
-Perception and Localization along with LIDAR and probabilistic Occupancy Grid Mapping
-algorithm for Mapping.  
+ ## Autonomous Mobile Robot Exploration with Initial Information and Uncertainty Consideration
+
+In the autonomous mobile robot exploration problem, the prevailing assumption often involves an entirely unknown environment. However, this assumption does not always hold true, as there are scenarios where initial information, such as rough 2D plans and satellite images, may be available for exploration. Despite recent efforts to incorporate this initial information into planning, these approaches have generally overlooked the existing uncertainties inherent in decision-making processes.
+
+### Novel Approach Overview
+
+This work introduces a novel approach that leverages available initial information while accounting for observation and motion uncertainties. The proposed methodology combines global planning in belief space with local exploration planning, aiming to enhance exploration effectiveness under more realistic conditions. To achieve reliable global planning in continuous belief space, a graph-based Feedback-based Information Road Map (FIRM) approach is employed. FIRM, inspired by the Probabilistic Road Map (PRM) approach, addresses the intractable Partially Observable Markov Decision Process (POMDP) problem in continuous belief space.
+
+### Integration of Global and Local Planning
+
+Following the acquisition of global planning, it is integrated with a local exploration algorithm, specifically the Histogram-based Frontier Exploration method. Additionally, a novel algorithm termed the "Transfer Algorithm" is introduced, leveraging FIRM graph features to safely navigate the robot from the current region to the next planned region when adhering to the global plan. Notably, the transfer algorithm ensures that the robot's uncertainty in each region remains independent of its uncertainty in other regions.
+
+### Experimental Evaluation
+
+The proposed approach and algorithms are evaluated through implementation on a nonholonomic mobile robot with unicycle dynamics, addressing various exploration problems in diverse environments. The experimental setup involves OpenCV, RGB camera, and Extended Kalman Filter (EKF) for perception and localization, along with LIDAR and a probabilistic Occupancy Grid Mapping algorithm for mapping.
+
